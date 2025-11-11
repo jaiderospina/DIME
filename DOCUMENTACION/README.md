@@ -7,6 +7,8 @@
 
 # 1. **Roles**
 
+**Cumplimiento: 5. Creación de usuarios de gestión**
+
 ### 1. **Definición de Roles Intermedios**
    
    Próposito. 
@@ -59,4 +61,5 @@ A continuación, se definen y caracterizan estos roles mínimos en una tabla par
 | **Administrador (Admin)** | Rol para el responsable TIC senior que maneja la configuración del sistema, usuarios y entidades, pero limitado a necesidades operativas intermedias. | - Interfaz estándar.<br>- Acceso completo en Administración (usuarios, entidades, reglas de negocio, autorizaciones LDAP).<br>- Leer/actualizar/crear/eliminar en Activos, Gestión y Herramientas; configuración de plantillas y listas desplegables.<br>- Supervisión global en Asistencia (estadísticas, exportaciones).<br>- Visibilidad: Todo el sistema por entidad; notificaciones para alertas administrativas.<br>- Exclusiones: No incluye permisos de Super-Admin para cambios críticos en reglas o comportamientos del sistema, minimizando riesgos. |
 
 Estos roles mínimos aseguran una estructura estandarizada: el Usuario Final enfocado en autoservicio, el Técnico en ejecución, el Supervisor en control intermedio y el Administrador en mantenimiento. Para implementarlos, se recomienda mapearlos a grupos LDAP (ej. basados en cargo o unidad), aplicar recursividad en entidades y probar escenarios de uso. Si la madurez evoluciona, se pueden agregar roles como "Observer" (para monitoreo pasivo) o "Hotliner" (para soporte inicial). 
+
 
